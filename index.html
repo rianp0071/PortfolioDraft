@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Website Header</h1>
+        <nav role="navigation" id="navigationBar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>This is the about me section of the website.</p>
+    </section>
+
+    <section id="projects">
+        <figure>
+            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="w3 schools" width="150" height="150">
+            <figcaption>My Project Picture</figcaption>
+        </figure>
+        <article id="web-apps" class="project-category web-app"> 
+            <h2>My Projects</h2>
+            <p>Here are some of my recent <b> WEB DEV </b> projects:</p>
+            <ul>
+                <li><strong>Project 1:</strong> This web application.</li>
+                <li><strong>Project 2:</strong> A web app for fitness tracking.</li>
+                <li><strong>Project 3:</strong> An e-commerce website for handmade crafts.</li>
+            </ul>
+        </article>
+        <article id="quant" class="project-category quant"> 
+            <h2>My Projects</h2>
+            <p>Here are some of my recent <b> QUANT </b> projects:</p>
+            <ul>
+                <li><strong>Project 1:</strong> A backtesting platform that showcased a strategy beating the S&P 500 3 to 1.</li>
+                <li><strong>Project 2:</strong> Trading algo.</li>
+                <li><strong>Project 3:</strong> Finance optimizations.</li>
+            </ul>
+        </article>
+        <article id="AI" class="project-category AI"> 
+            <h2>My Projects</h2>
+            <p>Here are some of my recent <b> AI </b> projects:</p>
+            <ul>
+                <li><strong>Project 1:</strong> Published Research Paper with Graduate Program Director of SMU</li>
+                <li><strong>Project 2:</strong> Etc.</li>
+                <li><strong>Project 3:</strong> Etc.</li>
+            </ul>
+        </article>
+
+    </section>
+
+    <section id="filter-buttons">
+        <button class="filter-button" data-category="web-app">Web Applications</button>
+        <button class="filter-button" data-category="quant">Quant Projects</button>
+        <button class="filter-button" data-category="AI">AI Projects</button>
+        <button class="filter-button" data-category="all">All Projects</button>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section> 
+        <button id="toggleButton"> Click me to toggle navigation menu </button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit_contact" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
